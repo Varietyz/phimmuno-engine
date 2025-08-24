@@ -1,0 +1,16 @@
+# Phimmuno Engine
+
+---
+
+The `phimmuno-security` module is an optional binary for the PhiCode Runtime Engine that provides an API security layer, protecting RESTful interactions by scanning input for potentially dangerous patterns. Using the Aho-Corasick algorithm for high-performance string matching, it detects threats such as code execution (`eval`, `exec`, `compile`), unsafe system calls (`os.system`, `subprocess`), malicious imports or built-ins, file operations, deserialization libraries (`pickle`, `marshal`), and SQL or filesystem attacks (`DROP TABLE`, `rm -rf`, `../`). It operates as a lightweight, stdin-driven filter, returning a success exit code if the content is safe, and a failure exit code if a threat is detected, allowing seamless integration into the PhiCode engine’s request handling pipeline.
+
+---
+
+## License
+
+This plugin is licensed under the same **Phicode License** as the core engine.
+
+- **Non-Commercial Use:** Free for personal, academic, and non-commercial use.
+- **Commercial Use:** Requires a paid commercial license.
+
+For details, see the [LICENSE](LICENSE.md) file in this repository or visit [https://banes-lab.com/licensing](https://banes-lab.com/licensing).

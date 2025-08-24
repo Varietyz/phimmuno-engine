@@ -1,3 +1,6 @@
+// Copyright 2025 Baleine Jay - Phimmuno Engine
+// Licensed under the Phicode Non-Commercial License (https://banes-lab.com/licensing)
+// Commercial use requires a paid license. See link for details.
 use aho_corasick::AhoCorasick;
 use std::io::{self, Read};
 
